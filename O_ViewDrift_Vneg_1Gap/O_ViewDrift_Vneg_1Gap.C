@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
   std::cout<<"Total Thickness: "<<2*dMylar + 2*dWindow + dGas<<std::endl;
   std::cout<<"Gas Gap: "<<2*dMylar + 2*dWindow + dGas - dMylar - dWindow << " to "<<dMylar+dWindow <<std::endl;
   // Applied potential
-  const double voltage = -15e3;  // [V] = -15 kV
+  const double voltage = 15e3;  // [V] = -15 kV
 
   ComponentParallelPlate *rpc = new ComponentParallelPlate();
   rpc->Setup(eps.size(), eps, thickness, voltage);

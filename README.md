@@ -7,7 +7,7 @@ Original Version Parameters:
 - 200 timebin
 - 0.1 AvalancheMicroscopic Time Window
 - Pion (100 GeV, this value is just to follow the value of the Garfield Website Guide.)
-- 
+
 1. `Original` - From `Example/RPC`, changed to positive signal and increase pion energy to 100 GeV
 2. `O_NoGasTable` - Change to no gas table method, comparison with `Original` 
 3. `O_1Gap` - Change from `Original` multigap configuration to single gap.

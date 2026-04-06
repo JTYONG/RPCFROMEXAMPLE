@@ -9,7 +9,7 @@ endif()
 
 # ---Build executable------------------------------------------------------------
 add_executable(O_ViewDrift_Vneg_1Gap O_ViewDrift_Vneg_1Gap.C)
-target_link_libraries(O_ViewDrift_Vneg Garfield::Garfield)
+target_link_libraries(O_ViewDrift_Vneg_1Gap Garfield::Garfield)
 
 # ---Copy all files locally to the build directory-------------------------------
 foreach(_file c2h2f4_ic4h10_sf6.gas TimingRPCGas.gas)

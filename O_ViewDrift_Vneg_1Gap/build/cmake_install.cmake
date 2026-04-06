@@ -1,4 +1,4 @@
-# Install script for directory: /home/sus/RPCFROMEXAMPLE/O_ViewDrift_Vneg
+# Install script for directory: /home/sus/RPCFROMEXAMPLE/O_ViewDrift_Vneg_1Gap
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sus/RPCFROMEXAMPLE/O_ViewDrift_Vneg/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sus/RPCFROMEXAMPLE/O_ViewDrift_Vneg_1Gap/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
