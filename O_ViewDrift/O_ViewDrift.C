@@ -15,12 +15,14 @@
 #include "Garfield/TrackHeed.hh"
 #include "Garfield/ViewSignal.hh"
 #include "Garfield/ViewField.hh"
+#include "Garfield/ViewDrift.hh"
 
 #define LOG(x) std::cout << x << std::endl
 
 using namespace Garfield;
 
 int main(int argc, char *argv[]) {
+  // Creates ROOT Application Environtment
   TApplication app("app", &argc, argv);
 
   const bool debug = true;
@@ -28,13 +30,14 @@ int main(int argc, char *argv[]) {
   constexpr bool plotField = true;
   
   // Describe the geometry of the RPC.
-
   // Relative permitivity of the layers
   const double epMylar = 3.1;     // [1]
   const double epGlaverbel = 8.;  // [1]
   const double epWindow = 6.;     // [1]
   const double epGas = 1.;        // [1]
-  std::vector<double> eps = {epMylar, epWindow,
+  std::vector<double> eps = {epMylar, epWindow,    epGas,  epGlaverbel,
+                             epGas,   epGlaverbel, epGas,  epGlaverbel,
+                             epGas,   epGlaverbel, epGas,  epGlaverbel,
                              epGas,   epWindow,    epMylar};
 
   // Thickness of the layers
@@ -42,12 +45,16 @@ int main(int argc, char *argv[]) {
   const double dGlaverbel = 0.07;  // [cm]
   const double dWindow = 0.12;     // [cm]
   const double dGas = 0.025;       // [cm]
-  std::vector<double> thickness = {dMylar, dWindow,
+  std::vector<double> thickness = {dMylar, dWindow,    dGas,  dGlaverbel,
+                                   dGas,   dGlaverbel, dGas,  dGlaverbel,
+                                   dGas,   dGlaverbel, dGas,  dGlaverbel,
                                    dGas,   dWindow,    dMylar};
   const double dTotal = std::accumulate(thickness.begin(), thickness.end(), 0.);
 
+  std::cout<<"Total Thickness: "<<2*dMylar + 2*dWindow + 6*dGas +5*dGlaverbel<<std::endl;
+
   // Applied potential
-  const double voltage = -15e3;  // [V] = 15 kV
+  const double voltage = 15e3;  // [V] = 15 kV
 
   ComponentParallelPlate *rpc = new ComponentParallelPlate();
   rpc->Setup(eps.size(), eps, thickness, voltage);
@@ -95,7 +102,7 @@ int main(int argc, char *argv[]) {
   ViewSignal *signalView = nullptr;
   TCanvas *cSignal = nullptr;
   if (plotSignal) {
-    cSignal = new TCanvas("cSignal", "", 600, 600);
+    cSignal = new TCanvas("cSignal", "Current - 1 event", 600, 600);
     signalView = new ViewSignal(&sensor);
     signalView->SetCanvas(cSignal);
   }
@@ -103,7 +110,7 @@ int main(int argc, char *argv[]) {
   ViewSignal *chargeView = nullptr;
   TCanvas *cCharge = nullptr;
   if (plotSignal) {
-    cCharge = new TCanvas("cCharge", "", 600, 600);
+    cCharge = new TCanvas("cCharge", "Charge - 1 event", 600, 600);
     chargeView = new ViewSignal(&sensor);
     chargeView->SetCanvas(cCharge);
   }
@@ -112,28 +119,33 @@ int main(int argc, char *argv[]) {
   TrackHeed track(&sensor);
   // Set the particle type and momentum [eV/c].
   track.SetParticle("pion");
-  track.SetMomentum(7.e9);
+  track.SetMomentum(1.e11);
   track.CrossInactiveMedia(true);
 
   std::clock_t start = std::clock();
 
+  auto cD = new TCanvas("cD","Drift",600,600);
+  ViewDrift driftView;
+  driftView.SetCanvas(cD);
+  aval.EnablePlotting(&driftView, 100);
+  track.EnablePlotting(&driftView);
+
   // Start the track in the first gas layer.
   const double y0 = dTotal - dMylar - dWindow;
-  std::cout<< y0 << "Debug: Start of Track Position "<<std::endl;
   // Simulate a charged-particle track.
-  track.NewTrack(0, y0, 0, 0, 0, -0.01, 0);
+  track.NewTrack(0, y0, 0, 0, 0, -1, 0);
   // Retrieve the clusters along the track.
   for (const auto &cluster : track.GetClusters()) {
     // Loop over the electrons in the cluster.
     for (const auto &electron : cluster.electrons) {
       // Simulate an avalanche (until the set time window).
       aval.AvalancheElectron(electron.x, electron.y, electron.z, electron.t,
-                             0.01, 0., 0., 0.);
+                             0.1, 0., 0., 0.);
       // Transfer the avalanche electrons to the grid.
       avalgrid.AddElectrons(&aval);
     }
   }
-
+  driftView.Plot();
   // Start grid based avalanche calculation starting from where the microsocpic
   // calculations stopped.
   LOG("Switching to grid based method.");
@@ -147,9 +159,9 @@ int main(int argc, char *argv[]) {
   if (plotSignal) {
     // Plot the induced current.
     signalView->PlotSignal(label);
+    signalView->EnableLegend();
     cSignal->Update();
     gSystem->ProcessEvents();
-
     sensor.ExportSignal(label, "Signal");
     // Plot the induced charge.
     sensor.IntegrateSignal(label);
@@ -159,9 +171,12 @@ int main(int argc, char *argv[]) {
     // Export induced current data as an csv file.
     sensor.ExportSignal(label, "Charge");
   }
+  /*
   LOG("Script: Total induced charge = " << sensor.GetTotalInducedCharge(label)
                                         << " [fC].");
-
+  LOG("Field Area x = "<< -0.5 <<" to "<<0.5);
+  LOG("Field Area y = "<< 0<<" to "<<dTotal);
+  */
   // Export and plot Weighting Fields
   ViewField *fieldView = nullptr;
   TCanvas *cField = nullptr;
@@ -169,12 +184,19 @@ int main(int argc, char *argv[]) {
   if (plotField) {
     cField = new TCanvas("cField", "", 600, 600);
     fieldView = new ViewField(&sensor);
+    /*
+    fieldView->SetPlane(0,-y0,0,0,-0.001,0);
+    fieldView->SetArea(-0.5,0,-0.5,0.5,dTotal,0.5);
+    fieldView->SetVoltageRange(-160., 160.);
+    */
     fieldView->SetCanvas(cField);
     LOG("Calculate Strip Weighting Field - on the GRID");
     rpc->SetWeightingPotentialGrid(-0.5, 0.5, 1, 0, dTotal, 100, -0.5, 0.5, 1, label);
     LOG("Plot Strip Weighting Field - on the GRID");
     cField->SetLeftMargin(0.16);
     fieldView->PlotProfileWeightingField(label,0., 0., 0., 0., dTotal, 0.,"v",true);
+    //fieldView->PlotWeightingField(label,"emag");
+    //fieldView->PlotContour();  
   }
 
   LOG("End of Program");
