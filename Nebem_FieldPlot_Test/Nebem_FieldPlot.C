@@ -21,7 +21,6 @@
 #include <fstream>
 #include <array>
 
-
 #include "Garfield/AvalancheGrid.hh"
 #include "Garfield/AvalancheMicroscopic.hh"
 //#include "Garfield/ComponentParallelPlate.hh"
@@ -311,7 +310,6 @@ for (int i=0; i<nfx; ++i) // loop over all x grid points
 std::cout << gDirectory->GetName() << std::endl;
 fieldtree->Write();
 treefile->Close();
-
 
   /*
   // Set the time bins.
