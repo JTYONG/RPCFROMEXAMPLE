@@ -1,3 +1,0 @@
-/home/sus/RPCFROMEXAMPLE/O_1Gap/build/CMakeFiles/O_1Gap.dir
-/home/sus/RPCFROMEXAMPLE/O_1Gap/build/CMakeFiles/edit_cache.dir
-/home/sus/RPCFROMEXAMPLE/O_1Gap/build/CMakeFiles/rebuild_cache.dir

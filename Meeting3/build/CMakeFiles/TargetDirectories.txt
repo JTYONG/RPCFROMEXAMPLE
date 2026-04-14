@@ -1,3 +1,0 @@
-/home/sus/RPCFROMEXAMPLE/Meeting3/build/CMakeFiles/Nebem1Gap_ViewDrift_Vneg_5kV.dir
-/home/sus/RPCFROMEXAMPLE/Meeting3/build/CMakeFiles/edit_cache.dir
-/home/sus/RPCFROMEXAMPLE/Meeting3/build/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-/home/sus/RPCFROMEXAMPLE/O_ViewDrift/build/CMakeFiles/O_ViewDrift.dir
-/home/sus/RPCFROMEXAMPLE/O_ViewDrift/build/CMakeFiles/edit_cache.dir
-/home/sus/RPCFROMEXAMPLE/O_ViewDrift/build/CMakeFiles/rebuild_cache.dir
