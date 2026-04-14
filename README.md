@@ -1,3 +1,4 @@
+# Actively updating and modifying
 # Version 
 Original Version Parameters:
 - Multigap Configuration (total thickness 0.81 cm)
