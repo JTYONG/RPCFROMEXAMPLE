@@ -45,6 +45,8 @@
 #include "Garfield/MediumPlastic.hh"
 #include "Garfield/FundamentalConstants.hh"
 
+#include <omp.h>
+
 #define LOG(x) std::cout << x << std::endl
 
 using namespace Garfield;
@@ -67,8 +69,8 @@ int main(int argc, char *argv[]) {
     static constexpr double fHoneyCombThickness = 0;     // cm - honey comb layer thickness         0 mm = 0 cm (Remove Honeycomb)
     static constexpr double fMylarThickness = 0.035;         // cm - mylar layer thickness              350 micron = 0.35 mm = 0.035 cm
     static constexpr double fResistiveGlassThickness = 0.12; // cm - resistive glass layer thickness  1.2 mm =0.12 cm
-    static constexpr double fAnodeVoltage = 3000.0;               // V - ANODE at +5 kV
-    static constexpr double fCathodeVoltage = -3000.0;            // V - CATHODE at -5V
+    static constexpr double fAnodeVoltage = 3000.0;               // V - ANODE at +3 kV
+    static constexpr double fCathodeVoltage = -3000.0;            // V - CATHODE at -3V
     
     static constexpr double fReadoutVoltage = 0;		// grounded potential for readout.
 
@@ -242,6 +244,7 @@ int main(int argc, char *argv[]) {
   // Simulate a charged-particle track.
   track.NewTrack(0, y0-0.00001, 0, 0, 0, -1, 0);
   // Retrieve the clusters along the track.
+ 
   for (const auto &cluster : track.GetClusters()) {
     // Loop over the electrons in the cluster.
     for (const auto &electron : cluster.electrons) {

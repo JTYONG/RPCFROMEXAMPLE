@@ -23,7 +23,7 @@
 
 
 //#include "Garfield/AvalancheGrid.hh"
-//#include "Garfield/AvalancheMicroscopic.hh"
+#include "Garfield/AvalancheMicroscopic.hh"
 //#include "Garfield/ComponentParallelPlate.hh"
 #include "Garfield/MediumMagboltz.hh"
 #include "Garfield/Sensor.hh"

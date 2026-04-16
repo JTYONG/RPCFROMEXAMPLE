@@ -88,7 +88,7 @@ gas.Initialise(true);
   // Materials needed.
     MediumPlastic* glass = new Garfield::MediumPlastic();
     MediumConductor* graphite = new Garfield::MediumConductor();
-    Medium* mylar = new Garfield::Medium();
+    MediumPlastic* mylar = new Garfield::MediumPlastic();
     MediumConductor* copper = new Garfield::MediumConductor();
 
     glass->SetDielectricConstant(10.0);
