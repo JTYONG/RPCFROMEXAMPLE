@@ -21,7 +21,6 @@
 #include <fstream>
 #include <array>
 
-
 #include "Garfield/AvalancheGrid.hh"
 #include "Garfield/AvalancheMicroscopic.hh"
 //#include "Garfield/ComponentParallelPlate.hh"
@@ -31,6 +30,7 @@
 #include "Garfield/ViewSignal.hh"
 #include "Garfield/ViewField.hh"
 #include "Garfield/ViewDrift.hh"
+#include "Garfield/ViewGeometry.hh"
 
 // Setup geometry and material
 #include "Garfield/ComponentNeBem3d.hh"
@@ -45,8 +45,6 @@
 #include "Garfield/MediumPlastic.hh"
 #include "Garfield/FundamentalConstants.hh"
 
-#include <omp.h>
-
 #define LOG(x) std::cout << x << std::endl
 
 using namespace Garfield;
@@ -59,21 +57,22 @@ int main(int argc, char *argv[]) {
   constexpr bool plotSignal = true;
   constexpr bool plotField = true;
   
-   static constexpr double fGasGapThickness = 0.2;         // cm - total gas gap thickness            2000 micron = 2 mm = 0.2 cm
+   static constexpr double fGasGapThickness = 0.025;         // cm - total gas gap thickness            250 micron = 0.25 mm = 0.025 cm
     static constexpr double fGasGapCenterY = 0.0/10.0;           // cm - centered at Y=0                    y = 0 mm =0 cm
     static constexpr double fAnodeCathodeThickness = 0.02/10.0;  // cm - thickness of HV layers             20 micron = 0.02 mm = 0.002 cm
-    static constexpr double fStripThickness = 5.00/10.0;         // cm - thickness of copper strips         5 mm = 0.5 cm
-    static constexpr double fStripWidthX = 30.0/10;              // cm - readout strip width                28 mm = 2.8 cm
-    static constexpr double fDetectorSizeX = 300.0/10.0;         // cm - detector size in X                 300 mm = 30 cm    
-    static constexpr double fDetectorSizeZ = 300.0/10.0;         // cm - detector size in Z                 300 mm = 30 cm
+    static constexpr double fStripThickness = 0.05/10.0;         // cm - thickness of copper strips         50 micron = 0.005 cm
+    static constexpr double fStripWidthX = 30.0/10;              // cm - readout strip width                30 mm = 3 cm
+    static constexpr double fDetectorSizeX = 30.0/10.0;         // cm - detector size in X                 30 mm = 3 cm    
+    static constexpr double fDetectorSizeZ = 30.0/10.0;         // cm - detector size in Z                 30 mm = 3 cm
     static constexpr double fHoneyCombThickness = 0;     // cm - honey comb layer thickness         0 mm = 0 cm (Remove Honeycomb)
     static constexpr double fMylarThickness = 0.035;         // cm - mylar layer thickness              350 micron = 0.35 mm = 0.035 cm
-    static constexpr double fResistiveGlassThickness = 0.12; // cm - resistive glass layer thickness  1.2 mm =0.12 cm
-    static constexpr double fAnodeVoltage = 5000.0;               // V - ANODE at +5 kV
-    static constexpr double fCathodeVoltage = -5000.0;            // V - CATHODE at -5 kV
-    
-    static constexpr double fReadoutVoltage = 0;		// grounded potential for readout.
+    static constexpr double fResistiveGlassThickness = 0.12; // cm - resistive glass layer thickness  1.2 mm = 0.12 cm
+    static constexpr double fAnodeVoltage = 5500.0;               // V - ANODE at +5.5 kV
+    static constexpr double fCathodeVoltage = -5500.0;            // V - CATHODE at -5.5 kV
+	
 
+    static constexpr double fReadoutVoltage = 0; // Readout Grounded
+				   
     // Calculate the dimension and location of geometry.
     double gasGapTop = fGasGapCenterY + fGasGapThickness/2.0;
     double gasGapBottom = fGasGapCenterY - fGasGapThickness/2.0;
@@ -82,10 +81,12 @@ int main(int argc, char *argv[]) {
     double fMylarPosition = fGasGapCenterY + fGasGapThickness/2.0 + fAnodeCathodeThickness + fResistiveGlassThickness + fMylarThickness/2.0;
     double fStripPosition = fGasGapCenterY + fGasGapThickness/2.0 + fAnodeCathodeThickness + fResistiveGlassThickness + fMylarThickness + fStripThickness/2.0;
 
-  // Set up the gas (C2H2F4/iC4H10/SF6 90/5/5).
-  MediumMagboltz gas;
-  gas.LoadGasFile("c2h2f4_ic4h10_sf6.gas");
-  gas.Initialise(true);
+  
+MediumMagboltz gas;
+gas.SetComposition("C2H2F4",90.0,"iC4H10",5,"SF6",5);
+gas.SetTemperature(296.15); 
+gas.SetPressure(760.0);
+gas.Initialise(true);
 
   // Materials needed.
     MediumPlastic* glass = new Garfield::MediumPlastic();
@@ -174,14 +175,146 @@ int main(int argc, char *argv[]) {
 
     rpc->SetGeometry(rpc_geometry);
     rpc->SetTargetElementSize(0.01); // 0.01 cm = 0.1mm = 100 microns  
-    rpc->SetMinMaxNumberOfElements(1, 10);  //
+    rpc->SetMinMaxNumberOfElements(3, 10);  //
     rpc->EnableDebugging();
     rpc->Initialise();
 
   // Create the sensor.
   Sensor sensor(rpc);
   sensor.AddElectrode(rpc, label);
+  
+TCanvas* cGeo = new TCanvas("c","Geometry",800,600);
+ViewGeometry geoView(rpc_geometry);
+geoView.SetCanvas(cGeo);
+geoView.Plot3d();
+cGeo->Update();
+cGeo->SaveAs("../GeometryPlot.png");
 
+const std::size_t nx = 50,ny =50,ncont =104;
+const double dTotal = 2*(fGasGapThickness/2.0 + fAnodeCathodeThickness + fResistiveGlassThickness + fMylarThickness + fStripThickness);
+
+
+  ViewField *fieldView = nullptr;
+  TCanvas *cField = nullptr;
+  cField = new TCanvas("cField", "Field", 1200,800);
+  fieldView = new ViewField();
+  fieldView->SetCanvas(cField);
+  fieldView->SetComponent(rpc);
+  
+  fieldView->SetNumberOfSamples2d(nx,ny);
+  fieldView->Plot("emag");
+  
+ //fieldView->EnableAutoRange();
+ fieldView->SetElectricFieldRange(0,10000); 
+ fieldView->PlotProfile(0,-0.025,0,0,0.025,0,"emag",true);
+
+
+  ViewField *contourView = nullptr;
+  TCanvas *cContour = nullptr;
+  cContour = new TCanvas("cContour","Contour",1200,800);
+  contourView = new ViewField();
+  contourView->SetCanvas(cContour);
+  contourView->SetComponent(rpc);
+  contourView->SetPlane(0,-1,0,0,0.0125,0);
+  contourView->SetArea(-5,-0.025,-5,5,0.02,5);
+  contourView->SetNumberOfContours(ncont);
+  contourView->PlotContour("emag");
+  cContour->SaveAs("../contouronxz.png");
+
+  ViewField *field2View = nullptr;
+  TCanvas *cfield2 = nullptr;
+  cfield2 = new TCanvas("cfield2","field2",1200,800);
+  field2View = new ViewField();
+  field2View->SetCanvas(cfield2);
+  field2View->SetComponent(rpc);
+  field2View->SetPlane(0,-1,0,0,0.015,0);
+  field2View->SetArea(-5,-0.025,-5,5,0.02,5);
+  field2View->SetNumberOfSamples2d(nx,ny);
+  field2View->Plot("emag");
+  cfield2->SaveAs("../fieldonxz.png");
+
+struct fielddata
+{
+  int pointindex;
+  double x;
+  double y;
+  double z;
+  double ex;
+  double ey;
+  double ez;
+  double emag;
+  int status;
+};
+
+fielddata NebemField;
+
+// Construct proper filename
+std::string filename = __FILE_NAME__;
+auto pos = filename.find_last_of('.');
+if (pos != std::string::npos) {
+    filename = filename.substr(0, pos);
+}
+filename += ".root";
+
+TFile *treefile = new TFile(filename.c_str(),"recreate");
+
+TTree *fieldtree = new TTree("FieldTree","Field value in gas gap.");
+
+fieldtree->Branch("point index",&NebemField.pointindex,"pointindex/I");
+fieldtree->Branch("x",&NebemField.x,"x/D");
+fieldtree->Branch("y",&NebemField.y,"y/D");
+fieldtree->Branch("z",&NebemField.z,"z/D");
+fieldtree->Branch("ex",&NebemField.ex,"ex/D");
+fieldtree->Branch("ey",&NebemField.ey,"ey/D");
+fieldtree->Branch("ez",&NebemField.ez,"ez/D");
+fieldtree->Branch("emag",&NebemField.emag,"emag/D");
+fieldtree->Branch("status",&NebemField.status,"status/I");
+
+double xmin = -1.5, xmax = 1.5;
+double zmin = -1.5, zmax = 1.5;
+
+double ymin = -fGasGapThickness/2 , ymax = +fGasGapThickness;
+
+int nfx = 50, nfz = 50;
+int nfy = 50;
+
+double dx = (xmax - xmin)/(double)(nfx-1);
+double dz = (zmax - zmin)/(double)(nfz-1);
+double dy = (ymax - ymin)/(double)(nfy-1);
+
+int index = 0;
+for (int i=0; i<nfx; ++i) // loop over all x grid points
+{
+  double x = xmin + i*dx;
+  for (int j=0; j<nfy; ++j)
+  {
+    double y = ymin + j*dy;
+    for (int k=0; k<nfz; ++k)
+    {
+      double z = zmin + k*dz;
+      Medium* medium = nullptr;
+      rpc->ElectricField(x,y,z,NebemField.ex,NebemField.ey,NebemField.ez,medium,NebemField.status);  
+      if (NebemField.status == 0) // field in gas medium.
+      {
+        NebemField.x = x;
+        NebemField.y = y;
+        NebemField.z = z;
+        NebemField.emag = std::sqrt(NebemField.ex*NebemField.ex + NebemField.ey*NebemField.ey + NebemField.ez*NebemField.ez);
+        NebemField.pointindex = index++;
+        fieldtree->Fill();
+
+        if (index%100 ==0){
+          std::cout<<"Sampled " << index << " points." << std::endl;
+        }
+      }
+    }
+  }
+}
+std::cout << gDirectory->GetName() << std::endl;
+fieldtree->Write();
+treefile->Close();
+
+  /*
   // Set the time bins.
   const std::size_t nTimeBins = 200;
   const double tmin = 0.;
@@ -244,7 +377,6 @@ int main(int argc, char *argv[]) {
   // Simulate a charged-particle track.
   track.NewTrack(0, y0-0.00001, 0, 0, 0, -1, 0);
   // Retrieve the clusters along the track.
- 
   for (const auto &cluster : track.GetClusters()) {
     // Loop over the electrons in the cluster.
     for (const auto &electron : cluster.electrons) {
@@ -281,6 +413,7 @@ int main(int argc, char *argv[]) {
     // Export induced current data as an csv file.
     sensor.ExportSignal(label, "Charge");
   }
+  */
   /*
   LOG("Script: Total induced charge = " << sensor.GetTotalInducedCharge(label)
                                         << " [fC].");
@@ -288,8 +421,6 @@ int main(int argc, char *argv[]) {
   LOG("Field Area y = "<< 0<<" to "<<dTotal);
   */
   // Export and plot Weighting Fields
-  ViewField *fieldView = nullptr;
-  TCanvas *cField = nullptr;
   
 /*
   if (plotField) {
@@ -310,7 +441,7 @@ int main(int argc, char *argv[]) {
     //fieldView->PlotContour();  
   }
 */
-
+  std::cin.get();
   LOG("End of Program");
-  app.Run(true);
+  app.Run();
 }
