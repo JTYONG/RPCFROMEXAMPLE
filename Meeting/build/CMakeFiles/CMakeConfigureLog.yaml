@@ -1,0 +1,1198 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc 
+      Build flags: -march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/sus/miniforge3/include
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++ 
+      Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/sus/miniforge3/include
+      Id flags:  
+      
+      The output was:
+      1
+      /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/ld: /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/libstdc++.so: undefined reference to `dladdr@GLIBC_2.2.5'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++ 
+      Build flags: -fvisibility-inlines-hidden;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/sus/miniforge3/include
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-DqCr59"
+      binary: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-DqCr59"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-DqCr59'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_230a1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_230a1.dir/build.make CMakeFiles/cmTC_230a1.dir/build
+        gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-DqCr59'
+        Building C object CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include    -v -o CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_230a1.dir/'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -isystem /home/sus/miniforge3/include /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_230a1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /home/sus/miniforge3/include -o - |
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o
+        GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1
+        GNU C17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/include"
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         .
+         /home/sus/New/Miux3-installer/garfield/Include
+         /home/sus/miniforge3/include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 2e4b1a9cce1e2797f9c8c15892139bae
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_230a1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_230a1.dir/link.txt --verbose=1
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib -v CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o -o cmTC_230a1 
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-L/home/sus/miniforge3/lib' '-v' '-o' 'cmTC_230a1' '-dumpdir' 'cmTC_230a1.'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEcJ6jq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_230a1 /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-L/home/sus/miniforge3/lib' '-v' '-o' 'cmTC_230a1' '-dumpdir' 'cmTC_230a1.'
+        gmake[1]: Leaving directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-DqCr59'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [.]
+          add: [/home/sus/New/Miux3-installer/garfield/Include]
+          add: [/home/sus/miniforge3/include]
+          add: [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+          add: [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+          add: [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        skipping relative include dir [.]
+        collapse include dir [/home/sus/New/Miux3-installer/garfield/Include] ==> [/home/sus/New/Miux3-installer/garfield/Include]
+        collapse include dir [/home/sus/miniforge3/include] ==> [/home/sus/miniforge3/include]
+        collapse include dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        collapse include dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        collapse include dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/sus/New/Miux3-installer/garfield/Include;/home/sus/miniforge3/include;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-DqCr59']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_230a1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_230a1.dir/build.make CMakeFiles/cmTC_230a1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-DqCr59']
+        ignore line: [Building C object CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include    -v -o CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_230a1.dir/']
+        ignore line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -isystem /home/sus/miniforge3/include /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_230a1.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /home/sus/miniforge3/include -o - |]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
+        ignore line: [GNU C17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ .]
+        ignore line: [ /home/sus/New/Miux3-installer/garfield/Include]
+        ignore line: [ /home/sus/miniforge3/include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2e4b1a9cce1e2797f9c8c15892139bae]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_230a1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_230a1.dir/link.txt --verbose=1]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include  -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /home/sus/miniforge3/lib -Wl -rpath-link /home/sus/miniforge3/lib -L/home/sus/miniforge3/lib -v CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o -o cmTC_230a1 ]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-L/home/sus/miniforge3/lib' '-v' '-o' 'cmTC_230a1' '-dumpdir' 'cmTC_230a1.']
+        link line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEcJ6jq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_230a1 /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib]
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccEcJ6jq.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_230a1] ==> ignore
+          arg [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc] ==> dir [/home/sus/miniforge3/bin/../lib/gcc]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [CMakeFiles/cmTC_230a1.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+          arg [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-L/home/sus/miniforge3/lib/stubs] ==> dir [/home/sus/miniforge3/lib/stubs]
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+        collapse obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+        collapse obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+        collapse obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc] ==> [/home/sus/miniforge3/lib/gcc]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/lib/stubs] ==> [/home/sus/miniforge3/lib/stubs]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/home/sus/miniforge3/lib;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/home/sus/miniforge3/lib/gcc;/home/sus/miniforge3/x86_64-conda-linux-gnu/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib;/home/sus/miniforge3/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-ZyaY0f"
+      binary: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-ZyaY0f"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-ZyaY0f'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_502be/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_502be.dir/build.make CMakeFiles/cmTC_502be.dir/build
+        gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-ZyaY0f'
+        Building CXX object CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include    -v -o CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_502be.dir/'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /home/sus/miniforge3/include /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_502be.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /home/sus/miniforge3/include -o - |
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o
+        GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1
+        GNU C++17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/include"
+        ignoring duplicate directory "."
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/sus/miniforge3/include
+         .
+         /home/sus/New/Miux3-installer/garfield/Include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 0f4abf5452fbb11bbb5a552109a0cc9e
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_502be
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_502be.dir/link.txt --verbose=1
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib -v CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_502be 
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-L/home/sus/miniforge3/lib' '-v' '-o' 'cmTC_502be' '-shared-libgcc' '-dumpdir' 'cmTC_502be.'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3jc8UN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_502be /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-L/home/sus/miniforge3/lib' '-v' '-o' 'cmTC_502be' '-shared-libgcc' '-dumpdir' 'cmTC_502be.'
+        gmake[1]: Leaving directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-ZyaY0f'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/sus/miniforge3/include]
+          add: [.]
+          add: [/home/sus/New/Miux3-installer/garfield/Include]
+          add: [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+          add: [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+          add: [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+          add: [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+          add: [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+          add: [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/sus/miniforge3/include] ==> [/home/sus/miniforge3/include]
+        skipping relative include dir [.]
+        collapse include dir [/home/sus/New/Miux3-installer/garfield/Include] ==> [/home/sus/New/Miux3-installer/garfield/Include]
+        collapse include dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+        collapse include dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+        collapse include dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        collapse include dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        collapse include dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/sus/miniforge3/include;/home/sus/New/Miux3-installer/garfield/Include;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-ZyaY0f']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_502be/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_502be.dir/build.make CMakeFiles/cmTC_502be.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-ZyaY0f']
+        ignore line: [Building CXX object CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include    -v -o CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_502be.dir/']
+        ignore line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -isystem /home/sus/miniforge3/include /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_502be.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -idirafter /home/sus/miniforge3/include -o - |]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
+        ignore line: [GNU C++17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/include"]
+        ignore line: [ignoring duplicate directory "."]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/sus/miniforge3/include]
+        ignore line: [ .]
+        ignore line: [ /home/sus/New/Miux3-installer/garfield/Include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0f4abf5452fbb11bbb5a552109a0cc9e]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-v' '-o' 'CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-dumpdir' 'CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_502be]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_502be.dir/link.txt --verbose=1]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include  -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /home/sus/miniforge3/lib -Wl -rpath-link /home/sus/miniforge3/lib -L/home/sus/miniforge3/lib -v CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_502be ]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-L/home/sus/miniforge3/lib' '-v' '-o' 'cmTC_502be' '-shared-libgcc' '-dumpdir' 'cmTC_502be.']
+        link line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3jc8UN.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_502be /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib]
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc3jc8UN.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_502be] ==> ignore
+          arg [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc] ==> dir [/home/sus/miniforge3/bin/../lib/gcc]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [CMakeFiles/cmTC_502be.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+          arg [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-L/home/sus/miniforge3/lib/stubs] ==> dir [/home/sus/miniforge3/lib/stubs]
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+        collapse obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o]
+        collapse obj [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o]
+        collapse obj [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc] ==> [/home/sus/miniforge3/lib/gcc]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/lib/stubs] ==> [/home/sus/miniforge3/lib/stubs]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/home/sus/miniforge3/lib;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/home/sus/miniforge3/lib/gcc;/home/sus/miniforge3/x86_64-conda-linux-gnu/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib;/home/sus/miniforge3/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sus/New/Garfieldpp/install/lib/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0"
+      binary: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib"
+      CMAKE_MODULE_PATH: "/home/sus/miniforge3/cmake/modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3db7a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3db7a.dir/build.make CMakeFiles/cmTC_3db7a.dir/build
+        gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0'
+        Building C object CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -o CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o -c /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0/OpenMPTryFlag.c
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3db7a.dir/'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT -isystem /home/sus/miniforge3/include /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_3db7a.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /home/sus/miniforge3/include -o - |
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o
+        GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1
+        GNU C17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/include"
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         .
+         /home/sus/New/Miux3-installer/garfield/Include
+         /home/sus/miniforge3/include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 2e4b1a9cce1e2797f9c8c15892139bae
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_3db7a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3db7a.dir/link.txt --verbose=1
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib  CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o -o cmTC_3db7a  -v 
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/libgomp.spec
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-L/home/sus/miniforge3/lib' '-o' 'cmTC_3db7a' '-v' '-pthread' '-dumpdir' 'cmTC_3db7a.'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckZSe4Z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3db7a /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib
+        COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-L/home/sus/miniforge3/lib' '-o' 'cmTC_3db7a' '-v' '-pthread' '-dumpdir' 'cmTC_3db7a.'
+        gmake[1]: Leaving directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sus/New/Garfieldpp/install/lib/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:6 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3db7a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3db7a.dir/build.make CMakeFiles/cmTC_3db7a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0']
+        ignore line: [Building C object CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -o CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o -c /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0/OpenMPTryFlag.c]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3db7a.dir/']
+        ignore line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1 -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT -isystem /home/sus/miniforge3/include /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-9OsII0/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_3db7a.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -march=nocona -mtune=haswell -O2 -version -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /home/sus/miniforge3/include -o - |]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
+        ignore line: [GNU C17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ .]
+        ignore line: [ /home/sus/New/Miux3-installer/garfield/Include]
+        ignore line: [ /home/sus/miniforge3/include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2e4b1a9cce1e2797f9c8c15892139bae]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o' '-c' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_3db7a]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3db7a.dir/link.txt --verbose=1]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /home/sus/miniforge3/lib -Wl -rpath-link /home/sus/miniforge3/lib -L/home/sus/miniforge3/lib  CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o -o cmTC_3db7a  -v ]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-L/home/sus/miniforge3/lib' '-o' 'cmTC_3db7a' '-v' '-pthread' '-dumpdir' 'cmTC_3db7a.']
+        link line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckZSe4Z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3db7a /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib]
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckZSe4Z.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3db7a] ==> ignore
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc] ==> dir [/home/sus/miniforge3/bin/../lib/gcc]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [CMakeFiles/cmTC_3db7a.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-L/home/sus/miniforge3/lib/stubs] ==> dir [/home/sus/miniforge3/lib/stubs]
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc] ==> [/home/sus/miniforge3/lib/gcc]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/lib/stubs] ==> [/home/sus/miniforge3/lib/stubs]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/home/sus/miniforge3/lib;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/home/sus/miniforge3/lib/gcc;/home/sus/miniforge3/x86_64-conda-linux-gnu/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib;/home/sus/miniforge3/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sus/New/Garfieldpp/install/lib/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx"
+      binary: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib"
+      CMAKE_MODULE_PATH: "/home/sus/miniforge3/cmake/modules"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_345f8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_345f8.dir/build.make CMakeFiles/cmTC_345f8.dir/build
+        gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx'
+        Building CXX object CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -o CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o -c /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx/OpenMPTryFlag.cpp
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_345f8.dir/'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D_REENTRANT -isystem /home/sus/miniforge3/include /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_345f8.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /home/sus/miniforge3/include -o - |
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o
+        GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1
+        GNU C++17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 15.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"
+        ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/home/sus/miniforge3/include"
+        ignoring duplicate directory "."
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+          as it is a non-system directory that duplicates a system directory
+        ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/sus/miniforge3/include
+         .
+         /home/sus/New/Miux3-installer/garfield/Include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include
+         /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed
+         /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Compiler executable checksum: 0f4abf5452fbb11bbb5a552109a0cc9e
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_345f8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_345f8.dir/link.txt --verbose=1
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib  CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o -o cmTC_345f8  -v 
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs
+        COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (conda-forge gcc 14.3.0-18) 
+        COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-L/home/sus/miniforge3/lib' '-o' 'cmTC_345f8' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_345f8.'
+         /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRrJWhS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_345f8 /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib
+        COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-L/home/sus/miniforge3/lib' '-o' 'cmTC_345f8' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_345f8.'
+        gmake[1]: Leaving directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:486 (_OPENMP_GET_FLAGS)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sus/New/Garfieldpp/install/lib/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:6 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(x86_64-conda-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_345f8/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_345f8.dir/build.make CMakeFiles/cmTC_345f8.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx']
+        ignore line: [Building CXX object CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -o CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o -c /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx/OpenMPTryFlag.cpp]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_345f8.dir/']
+        ignore line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/cc1plus -quiet -v -iprefix /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/ -isysroot /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE -D_REENTRANT -isystem /home/sus/miniforge3/include /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-5vanVx/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_345f8.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -march=nocona -mtune=haswell -O2 -version -fvisibility-inlines-hidden -fmessage-length=0 -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -ffunction-sections -fopenmp -idirafter /home/sus/miniforge3/include -o - |]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.45.1]
+        ignore line: [GNU C++17 (conda-forge gcc 14.3.0-18) version 14.3.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/home/sus/miniforge3/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/home/sus/miniforge3/include"]
+        ignore line: [ignoring duplicate directory "."]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [ignoring duplicate directory "/home/sus/New/Miux3-installer/garfield/Include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/sus/miniforge3/include]
+        ignore line: [ .]
+        ignore line: [ /home/sus/New/Miux3-installer/garfield/Include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/x86_64-conda-linux-gnu]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++/backward]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include]
+        ignore line: [ /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0f4abf5452fbb11bbb5a552109a0cc9e]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_345f8]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_345f8.dir/link.txt --verbose=1]
+        ignore line: [/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -v -Wl -O2 -Wl --sort-common -Wl --as-needed -Wl -z relro -Wl -z now -Wl --disable-new-dtags -Wl --gc-sections -Wl --allow-shlib-undefined -Wl -rpath /home/sus/miniforge3/lib -Wl -rpath-link /home/sus/miniforge3/lib -L/home/sus/miniforge3/lib  CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o -o cmTC_345f8  -v ]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/specs]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/conda.specs]
+        ignore line: [COLLECT_GCC=/home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/share/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --without-zstd --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/include/c++ --with-gxx-libcxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../include/c++/v1 --with-pkgversion='conda-forge gcc 14.3.0-18' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix --enable-__cxa_atexit --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1771374355041/_build_env/x86_64-conda-linux-gnu/sysroot --enable-plugin --enable-lto]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (conda-forge gcc 14.3.0-18) ]
+        ignore line: [COMPILER_PATH=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../libexec/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/:/home/sus/miniforge3/bin/../lib/gcc/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/:/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/sus/miniforge3/include' '-fopenmp' '-v' '-L/home/sus/miniforge3/lib' '-o' 'cmTC_345f8' '-v' '-shared-libgcc' '-pthread' '-dumpdir' 'cmTC_345f8.']
+        link line: [ /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2 -disable-new-dtags -plugin /home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRrJWhS.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_345f8 /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtbeginS.o -L/home/sus/miniforge3/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0 -L/home/sus/miniforge3/bin/../lib/gcc -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib -L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../.. -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections --allow-shlib-undefined -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/crtendS.o /home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/sus/miniforge3/lib -rpath-link /home/sus/miniforge3/lib -L /home/sus/miniforge3/lib/stubs -L /home/sus/miniforge3/lib]
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/sus/miniforge3/bin/../libexec/gcc/x86_64-conda-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRrJWhS.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_345f8] ==> ignore
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc] ==> dir [/home/sus/miniforge3/bin/../lib/gcc]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-O2] ==> ignore
+          arg [--sort-common] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [--disable-new-dtags] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--allow-shlib-undefined] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [CMakeFiles/cmTC_345f8.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-rpath] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/home/sus/miniforge3/lib] ==> ignore
+          arg [-L/home/sus/miniforge3/lib/stubs] ==> dir [/home/sus/miniforge3/lib/stubs]
+          arg [-L/home/sus/miniforge3/lib] ==> dir [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0] ==> [/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc] ==> [/home/sus/miniforge3/lib/gcc]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../lib] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../..] ==> [/home/sus/miniforge3/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/sus/miniforge3/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/home/sus/miniforge3/lib/stubs] ==> [/home/sus/miniforge3/lib/stubs]
+        collapse library dir [/home/sus/miniforge3/lib] ==> [/home/sus/miniforge3/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/home/sus/miniforge3/lib;/home/sus/miniforge3/lib/gcc/x86_64-conda-linux-gnu/14.3.0;/home/sus/miniforge3/lib/gcc;/home/sus/miniforge3/x86_64-conda-linux-gnu/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/lib;/home/sus/miniforge3/x86_64-conda-linux-gnu/sysroot/usr/lib;/home/sus/miniforge3/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sus/New/Garfieldpp/install/lib/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-hqMYxu"
+      binary: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-hqMYxu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib"
+      CMAKE_MODULE_PATH: "/home/sus/miniforge3/cmake/modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-hqMYxu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fe29d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fe29d.dir/build.make CMakeFiles/cmTC_fe29d.dir/build
+        gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-hqMYxu'
+        Building C object CMakeFiles/cmTC_fe29d.dir/OpenMPCheckVersion.c.o
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -o CMakeFiles/cmTC_fe29d.dir/OpenMPCheckVersion.c.o -c /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-hqMYxu/OpenMPCheckVersion.c
+        Linking C executable cmTC_fe29d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe29d.dir/link.txt --verbose=1
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib  CMakeFiles/cmTC_fe29d.dir/OpenMPCheckVersion.c.o -o cmTC_fe29d 
+        gmake[1]: Leaving directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-hqMYxu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:420 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindOpenMP.cmake:560 (_OPENMP_GET_SPEC_DATE)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/sus/New/Garfieldpp/install/lib/cmake/Garfield/GarfieldConfig.cmake:38 (find_dependency)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-624YwL"
+      binary: "/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-624YwL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib"
+      CMAKE_MODULE_PATH: "/home/sus/miniforge3/cmake/modules"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-624YwL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cfd58/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cfd58.dir/build.make CMakeFiles/cmTC_cfd58.dir/build
+        gmake[1]: Entering directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-624YwL'
+        Building CXX object CMakeFiles/cmTC_cfd58.dir/OpenMPCheckVersion.cpp.o
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -o CMakeFiles/cmTC_cfd58.dir/OpenMPCheckVersion.cpp.o -c /home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-624YwL/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_cfd58
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfd58.dir/link.txt --verbose=1
+        /home/sus/miniforge3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/sus/miniforge3/include -fopenmp -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/sus/miniforge3/lib -Wl,-rpath-link,/home/sus/miniforge3/lib -L/home/sus/miniforge3/lib  CMakeFiles/cmTC_cfd58.dir/OpenMPCheckVersion.cpp.o -o cmTC_cfd58 
+        gmake[1]: Leaving directory '/home/sus/RPCFROMEXAMPLE/Meeting/build/CMakeFiles/CMakeScratch/TryCompile-624YwL'
+        
+      exitCode: 0
+...
